@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    background: #666699;    
+    margin: 0;
+    padding: 0;   
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.clockContainer {  
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    background: #ff6680;
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 5px;
+}
+
+input {
+    border: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.controls {
+    margin-top: 10px;
+}
+
+.button {
+    border: none;
+    color: #fff;        
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.set-alarm {
+    background-color: rgb(209, 84, 84);
+}
+
+.clear-alarm {
+    background-color: rgb(69, 69, 196);
+}
