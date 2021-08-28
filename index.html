@@ -18,11 +18,12 @@
 </head>
 <body>
     <div class="clockContainer">
+        <div id="today"></div>
         <div id="clock"></div>
-        <input name="alarmTime" type="datetime-local">
+        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
         <div class="controls">
-            <button class="button set-alarm">Set alarm</button>
-            <button class="button clear-alarm">Clear alarm</button>
+            <button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+            <button onclick="clearAlarm()" class="button clear-alarm">Clear alarm</button>
         </div>
     </div>
 
