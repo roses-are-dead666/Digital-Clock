@@ -118,14 +118,14 @@
 
     @media (max-width: 375px) {
         #today {
-            font-size: 17px;
+            font-size: 12px;
             margin-bottom: 25px;
         }
 
         #clock {
-            width: 300px;
-            font-size: 35px;
-            padding: 20px;
+            width: 280px;
+            font-size: 30px;
+            padding: 15px;
         }
     }
 
