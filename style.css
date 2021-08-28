@@ -1,130 +1,144 @@
-html {
-    scroll-behavior: smooth; 
-}
+    html {
+        scroll-behavior: smooth; 
+    }
 
-body {
-    background: #666699;    
-    margin: 0;
-    padding: 0;   
-}
+    body {
+        background: #666699;    
+        margin: 0;
+        padding: 0;   
+    }
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+    }
 
-.clockContainer {
-    width: 100%;  
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
+    .clockContainer {
+        width: 100%;  
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
 
-#today {
-    color: #fff;
-    font-size: 30px;
-    font-family: 'Roboto Mono', monospace;
-    margin-bottom: 50px;
-    letter-spacing: 1px;    
-}
-
-#clock {
-    background: #ff6680;
-    width: 500px;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 60px;
-    font-family: 'Orbitron', sans-serif;
-    margin-bottom: 50px;
-    box-shadow: 0 0 10px 5px;
-}
-
-input {
-    border: none;
-    padding: 10px 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    text-transform: uppercase;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.controls {
-    margin-top: 10px;
-}
-
-.button {
-    border: none;
-    color: #fff;        
-    padding: 4px 8px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.set-alarm {
-    background-color: rgb(209, 84, 84);
-    transition: .2s;
-}
-
-.set-alarm:hover {
-    background-color: rgb(133, 16, 16);
-}
-
-.clear-alarm {
-    background-color: rgb(69, 69, 196);
-    transition: .2s;
-}
-
-.clear-alarm:hover {
-    background-color: rgb(23, 23, 145);
-}
-
-@media (max-width: 575px) {
     #today {
-        font-size: 25px;
-        margin-bottom: 30px;
+        color: #fff;
+        font-size: 30px;
+        font-family: 'Roboto Mono', monospace;
+        margin-bottom: 50px;
+        letter-spacing: 1px;    
     }
 
     #clock {
-        width: 400px;
-        font-size: 50px;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 475px) {
-    #today {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    #clock {
-        width: 330px;
-        font-size: 40px;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 375px) {
-    #today {
-        font-size: 17px;
-        margin-bottom: 25px;
+        background: #ff6680;
+        width: 500px;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 60px;
+        font-family: 'Orbitron', sans-serif;
+        margin-bottom: 50px;
+        box-shadow: 0 0 10px 5px;
     }
 
-    #clock {
-        width: 300px;
-        font-size: 35px;
-        padding: 20px;
+    input {
+        border: none;
+        padding: 10px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        text-transform: uppercase;
+        font-family: 'Roboto Mono', monospace;
     }
-}
+
+    .controls {
+        margin-top: 10px;
+    }
+
+    .button {
+        border: none;
+        color: #fff;        
+        padding: 4px 8px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .set-alarm {
+        background-color: rgb(209, 84, 84);
+        transition: .2s;
+    }
+
+    .set-alarm:hover {
+        background-color: rgb(133, 16, 16);
+    }
+
+    .clear-alarm {
+        background-color: rgb(69, 69, 196);
+        transition: .2s;
+    }
+
+    .clear-alarm:hover {
+        background-color: rgb(23, 23, 145);
+    }
+
+    @media (max-width: 575px) {
+        #today {
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        #clock {
+            width: 400px;
+            font-size: 50px;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 475px) {
+        #today {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        #clock {
+            width: 330px;
+            font-size: 40px;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        #today {
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        #clock {
+            width: 300px;
+            font-size: 35px;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 330px) {
+        #today {
+            font-size: 12px;
+            margin-bottom: 25px;
+
+        }
+
+        #clock {
+            width: 280px;
+            font-size: 30px;
+            padding: 15px;
+        }
+    }
